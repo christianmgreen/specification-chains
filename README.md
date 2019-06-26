@@ -1,5 +1,5 @@
 # Specification Chains
-A simple example of building And / Or operations into your criteria specifications
+- A simple example of building And / Or operations into your criteria specifications
 -----
 ## Usage
 ```c#
