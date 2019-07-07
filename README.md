@@ -8,22 +8,13 @@
   var isGoodRestaurant = new GoodRestaurantSpecification();
   var isAmerican = new AmericanRestaurantSpecification();
 
-  var mySpecification = isGoodRestaurant.And(isAmerican);
+  var isGoodAndAmerican = isGoodRestaurant.And(isAmerican);
 ```
 ## Example (OR)
 ```c#
-  var isGoodRestaurant = new GoodRestaurantSpecification();
+  var isItalian = new ItalianRestaurantSpecification();
   var isAmerican = new AmericanRestaurantSpecification();
 
-  var mySpecification = isGoodRestaurant.Or(isAmerican);
-```
---------
-## Example (with Evaluator)
-```c#
-  var isGoodRestaurant = new GoodRestaurantSpecification();
-  var isAmerican = new AmericanRestaurantSpecification();
-
-  var mySpecification = isGoodRestaurant.Or(isAmerican);
-  var evaluator = new SpecificationEvaluator<Restaurant>();
+  var isItalianOrAmerican = isItalian.Or(isAmerican);
 ```
 --------
